@@ -3,8 +3,8 @@
 **/.env.*
 !**/.env.example
 
-# Separate PHP/MySQL backend
-api/
+# Separate PHP/MySQL backend at the repository root
+/api/
 
 # Frontend dependencies and generated output
 arozao/node_modules/
