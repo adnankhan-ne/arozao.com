@@ -1,0 +1,475 @@
+.arozao-panel {
+  --panel-ink: #1c2541;
+  --panel-muted: #75809a;
+  --panel-border: #e7eaf1;
+  --panel-accent: #6957d8;
+  --panel-accent-soft: #f0edff;
+  display: flex;
+  min-height: 100vh;
+  background: #f6f7fb;
+  color: var(--panel-ink);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.arozao-panel *,
+.arozao-panel *::before,
+.arozao-panel *::after {
+  box-sizing: border-box;
+}
+
+.arozao-panel-sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex: 0 0 258px;
+  flex-direction: column;
+  width: 258px;
+  height: 100vh;
+  padding: 22px 14px 16px;
+  overflow-y: auto;
+  color: #e5e8f4;
+  background: #191d35;
+  z-index: 20;
+}
+
+.arozao-panel-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 0 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.arozao-panel-brand-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  color: #fff;
+  background: #7965ed;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.arozao-panel-brand strong,
+.arozao-panel-brand small {
+  display: block;
+}
+
+.arozao-panel-brand strong {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+
+.arozao-panel-brand small {
+  margin-top: 3px;
+  color: #9da5c2;
+  font-size: 11px;
+}
+
+.arozao-panel-navigation {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.arozao-panel-nav-group {
+  margin: 0 0 20px;
+}
+
+.arozao-panel-nav-heading {
+  display: block;
+  padding: 0 11px 8px;
+  color: #838ca9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.arozao-panel-nav-link,
+.arozao-panel-storefront-link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 41px;
+  margin: 2px 0;
+  padding: 0 11px;
+  border-radius: 9px;
+  color: #c6cbe0;
+  font-size: 13px;
+  font-weight: 550;
+  text-decoration: none;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.arozao-panel-nav-link:hover,
+.arozao-panel-storefront-link:hover {
+  color: #fff;
+  background: #282d4b;
+}
+
+.arozao-panel-nav-link.is-active {
+  color: #fff;
+  background: #39335f;
+  box-shadow: inset 3px 0 #9c8cff;
+}
+
+.arozao-panel-nav-icon {
+  display: inline-flex;
+  color: #aab1ca;
+}
+
+.arozao-panel-nav-link.is-active .arozao-panel-nav-icon {
+  color: #c5bbff;
+}
+
+.arozao-panel-nav-icon svg,
+.arozao-panel-storefront-link svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.arozao-panel-storefront-link {
+  min-height: 42px;
+  margin-top: 12px;
+  border-top: 1px solid #303550;
+  border-radius: 0;
+  padding-top: 12px;
+}
+
+.arozao-panel-workspace {
+  flex: 1;
+  min-width: 0;
+}
+
+.arozao-panel-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 12px clamp(18px, 3vw, 42px);
+  border-bottom: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.arozao-panel-topbar-start,
+.arozao-panel-topbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.arozao-panel-topbar-start {
+  gap: 12px;
+  min-width: 160px;
+}
+
+.arozao-panel-context strong,
+.arozao-panel-context span {
+  display: block;
+}
+
+.arozao-panel-context strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.arozao-panel-context span {
+  margin-top: 3px;
+  color: var(--panel-muted);
+  font-size: 11px;
+}
+
+.arozao-panel-search {
+  display: flex;
+  width: min(440px, 42vw);
+  height: 40px;
+  align-items: center;
+  gap: 9px;
+  padding: 0 11px;
+  border: 1px solid var(--panel-border);
+  border-radius: 9px;
+  background: #f8f9fc;
+  color: #818ba2;
+}
+
+.arozao-panel-search svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+}
+
+.arozao-panel-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: var(--panel-ink);
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+}
+
+.arozao-panel-search kbd {
+  flex: 0 0 auto;
+  padding: 2px 5px;
+  border: 1px solid #e0e4ed;
+  border-radius: 4px;
+  color: #929ab0;
+  background: #fff;
+  font-size: 10px;
+}
+
+.arozao-panel-topbar-actions {
+  gap: 12px;
+}
+
+.arozao-panel-icon-button,
+.arozao-panel-menu-toggle {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--panel-border);
+  border-radius: 9px;
+  color: #66718a;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arozao-panel-icon-button svg,
+.arozao-panel-menu-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.arozao-panel-profile {
+  position: relative;
+}
+
+.arozao-panel-profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0;
+  border: 0;
+  color: var(--panel-ink);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.arozao-panel-avatar {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: #5749b8;
+  background: #eeebff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.arozao-panel-profile-copy strong,
+.arozao-panel-profile-copy small {
+  display: block;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arozao-panel-profile-copy strong {
+  font-size: 11px;
+}
+
+.arozao-panel-profile-copy small {
+  margin-top: 3px;
+  color: var(--panel-muted);
+  font-size: 10px;
+}
+
+.arozao-panel-profile-trigger > svg {
+  width: 15px;
+  height: 15px;
+  color: #8992a7;
+}
+
+.arozao-panel-profile-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 30;
+  min-width: 180px;
+  padding: 6px;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(28, 37, 65, 0.14);
+}
+
+.arozao-panel-profile-menu a,
+.arozao-panel-profile-menu button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 7px;
+  color: #39445d;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.arozao-panel-profile-menu a:hover,
+.arozao-panel-profile-menu button:hover {
+  background: #f3f4f9;
+}
+
+.arozao-panel-profile-menu svg {
+  width: 15px;
+  height: 15px;
+}
+
+.arozao-panel-menu-toggle,
+.arozao-panel-backdrop {
+  display: none;
+}
+
+.arozao-panel-main {
+  min-width: 0;
+  padding: 28px clamp(18px, 3vw, 42px) 52px;
+}
+
+.arozao-panel .site-content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arozao-panel .admin-portal-shell {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.arozao-panel .seller-main-body {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arozao-panel .admin-panel-page-heading {
+  margin: 0 0 22px;
+}
+
+.arozao-panel .admin-panel-page-heading h1 {
+  margin: 7px 0 6px;
+  color: var(--panel-ink);
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.2;
+}
+
+.arozao-panel .admin-panel-page-heading p {
+  margin: 0;
+  color: var(--panel-muted);
+  font-size: 13px;
+}
+
+.arozao-panel-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 18;
+  border: 0;
+  background: rgba(14, 18, 35, 0.45);
+}
+
+@media (max-width: 900px) {
+  .arozao-panel-sidebar {
+    position: fixed;
+    left: 0;
+    transform: translateX(-105%);
+    transition: transform 180ms ease;
+    box-shadow: 12px 0 30px rgba(13, 17, 34, 0.18);
+  }
+
+  .arozao-panel-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .arozao-panel-backdrop {
+    display: block;
+  }
+
+  .arozao-panel-menu-toggle {
+    display: inline-flex;
+  }
+
+  .arozao-panel-topbar-start {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .arozao-panel-topbar {
+    min-height: 66px;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .arozao-panel-context strong {
+    font-size: 12px;
+  }
+
+  .arozao-panel-context span,
+  .arozao-panel-search kbd,
+  .arozao-panel-profile-copy,
+  .arozao-panel-profile-trigger > svg {
+    display: none;
+  }
+
+  .arozao-panel-search {
+    width: auto;
+    flex: 1;
+    height: 36px;
+    gap: 6px;
+    padding: 0 8px;
+  }
+
+  .arozao-panel-search input {
+    font-size: 11px;
+  }
+
+  .arozao-panel-topbar-actions {
+    gap: 7px;
+  }
+
+  .arozao-panel-icon-button,
+  .arozao-panel-menu-toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .arozao-panel-main {
+    padding: 20px 14px 38px;
+  }
+}

@@ -1,0 +1,27 @@
+.seller-theme {
+  --bs-primary: #2e2a63;
+  --bs-primary-rgb: 46, 42, 99;
+  --bs-link-color: #2e2a63;
+  --bs-link-hover-color: #242052;
+  --bs-body-font-family: "Nunito", "Segoe UI", sans-serif;
+  color: var(--bs-body-color);
+  font-family: var(--bs-body-font-family);
+}
+
+.seller-theme .btn-primary {
+  --bs-btn-bg: #2e2a63;
+  --bs-btn-border-color: #2e2a63;
+  --bs-btn-hover-bg: #242052;
+  --bs-btn-hover-border-color: #242052;
+  --bs-btn-active-bg: #1b1840;
+  --bs-btn-active-border-color: #1b1840;
+}
+
+.seller-theme .btn-outline-primary {
+  --bs-btn-color: #2e2a63;
+  --bs-btn-border-color: #2e2a63;
+  --bs-btn-hover-bg: #2e2a63;
+  --bs-btn-hover-border-color: #2e2a63;
+  --bs-btn-active-bg: #1b1840;
+  --bs-btn-active-border-color: #1b1840;
+}

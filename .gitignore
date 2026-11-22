@@ -1,0 +1,19 @@
+# Local environment and credentials
+**/.env
+**/.env.*
+!**/.env.example
+
+# Separate PHP/MySQL backend
+api/
+
+# Frontend dependencies and generated output
+arozao/node_modules/
+arozao/.next/
+arozao/.next-dev/
+arozao/tsconfig.tsbuildinfo
+arozao/build.log
+
+# Local reports and logs
+PROJECT_AUDIT_REPORT.md
+*.log
+

@@ -1,0 +1,8 @@
+{
+  "name": "Arozao",
+  "description": "Everyday essentials storefront with express delivery, cash on delivery, and customer account dashboard.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
