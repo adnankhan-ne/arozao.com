@@ -2,10 +2,32 @@
   --admin-ink: #292b3d;
   --admin-muted: #85889c;
   --admin-border: #ececf3;
-  --admin-purple: #7259df;
+  --admin-purple: #552D00;
   --admin-canvas: #f7f7fb;
+  --bs-primary: #FF991C;
+  --bs-primary-rgb: 255, 153, 28;
   color: var(--admin-ink);
   font-family: "Nunito", "Segoe UI", sans-serif;
+}
+
+.arozao-admin-theme .btn-primary {
+  --bs-btn-color: #1C1A2B;
+  --bs-btn-bg: #FF991C;
+  --bs-btn-border-color: #FF991C;
+  --bs-btn-hover-color: #1C1A2B;
+  --bs-btn-hover-bg: #E8870B;
+  --bs-btn-hover-border-color: #E8870B;
+  --bs-btn-active-color: #1C1A2B;
+  --bs-btn-active-bg: #C96B00;
+  --bs-btn-active-border-color: #C96B00;
+}
+
+.arozao-admin-theme .btn-outline-primary {
+  --bs-btn-color: #552D00;
+  --bs-btn-border-color: #FF991C;
+  --bs-btn-hover-color: #1C1A2B;
+  --bs-btn-hover-bg: #FF991C;
+  --bs-btn-hover-border-color: #FF991C;
 }
 
 .arozao-admin-theme .arozao-panel {
@@ -32,8 +54,8 @@
 
 .arozao-admin-theme .arozao-panel-brand-mark {
   border-radius: 12px;
-  background: linear-gradient(145deg, #826bed, #6348d2);
-  box-shadow: 0 7px 15px rgba(114, 89, 223, 0.22);
+  background: linear-gradient(145deg, #FFAA45, #FF991C);
+  box-shadow: 0 7px 15px rgba(255, 153, 28, 0.22);
 }
 
 .arozao-admin-theme .arozao-panel-brand small {
@@ -63,13 +85,13 @@
 .arozao-admin-theme .arozao-panel-nav-link:hover,
 .arozao-admin-theme .arozao-panel-storefront-link:hover {
   color: var(--admin-purple);
-  background: #f7f5ff;
+  background: #fff7eb;
 }
 
 .arozao-admin-theme .arozao-panel-nav-link.is-active {
   color: var(--admin-purple);
-  background: #f0edff;
-  box-shadow: inset 3px 0 #7259df;
+  background: #fff0d6;
+  box-shadow: inset 3px 0 #FF991C;
 }
 
 .arozao-admin-theme .arozao-panel-nav-icon,
@@ -103,8 +125,8 @@
 }
 
 .arozao-admin-theme .arozao-panel-search:focus-within {
-  border-color: #c9c0f6;
-  box-shadow: 0 0 0 3px rgba(114, 89, 223, 0.08);
+  border-color: #ffcc8f;
+  box-shadow: 0 0 0 3px rgba(255, 153, 28, 0.12);
 }
 
 .arozao-admin-theme .arozao-panel-search input {
@@ -120,7 +142,7 @@
 .arozao-admin-theme .arozao-panel-icon-button:hover {
   color: var(--admin-purple);
   border-color: #ddd7fa;
-  background: #f8f6ff;
+  background: #fff7eb;
 }
 
 .arozao-admin-theme .arozao-panel-main {
@@ -144,10 +166,10 @@
   align-items: center;
   min-height: 27px;
   padding: 4px 10px;
-  border: 1px solid #e8e3ff;
+  border: 1px solid #ffddaa;
   border-radius: 999px;
-  color: #7058d5;
-  background: #f3f0ff;
+  color: #552D00;
+  background: #fff3e0;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.035em;
@@ -269,9 +291,9 @@
 
 .arozao-admin-theme .table-btn:hover,
 .arozao-admin-theme .admin-review-button:hover {
-  border-color: #7259df;
-  color: #fff;
-  background: #7259df;
+  border-color: #FF991C;
+  color: var(--color-primary-ink);
+  background: #FF991C;
 }
 
 .arozao-admin-theme .status-badge,
@@ -343,8 +365,8 @@
 
 .admin-metric-icon.is-violet,
 .admin-health-icon.is-violet {
-  color: #7159d9;
-  background: #f0edff;
+  color: #552D00;
+  background: #fff0d6;
 }
 
 .admin-metric-icon.is-green {
@@ -404,7 +426,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #7158e2;
+  background: #FF991C;
 }
 
 .admin-chart {
@@ -518,14 +540,14 @@
   flex: 0 0 auto;
   align-items: center;
   gap: 4px;
-  color: #7158d9;
+  color: #552D00;
   font-size: 11px;
   font-weight: 800;
   text-decoration: none;
 }
 
 .admin-card-link:hover {
-  color: #5038b6;
+  color: #3F2200;
 }
 
 .admin-top-products {

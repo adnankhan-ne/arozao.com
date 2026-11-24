@@ -2,8 +2,8 @@
   --panel-ink: #1c2541;
   --panel-muted: #75809a;
   --panel-border: #e7eaf1;
-  --panel-accent: #6957d8;
-  --panel-accent-soft: #f0edff;
+  --panel-accent: #FF991C;
+  --panel-accent-soft: #fff0d6;
   display: flex;
   min-height: 100vh;
   background: #f6f7fb;
@@ -48,8 +48,8 @@
   height: 38px;
   place-items: center;
   border-radius: 12px;
-  color: #fff;
-  background: #7965ed;
+  color: #1c1a2b;
+  background: #FF991C;
   font-size: 19px;
   font-weight: 800;
 }
@@ -114,7 +114,7 @@
 .arozao-panel-nav-link.is-active {
   color: #fff;
   background: #39335f;
-  box-shadow: inset 3px 0 #9c8cff;
+  box-shadow: inset 3px 0 #FF991C;
 }
 
 .arozao-panel-nav-icon {
@@ -123,7 +123,7 @@
 }
 
 .arozao-panel-nav-link.is-active .arozao-panel-nav-icon {
-  color: #c5bbff;
+  color: #ffcc8f;
 }
 
 .arozao-panel-nav-icon svg,
@@ -276,8 +276,8 @@
   flex: 0 0 auto;
   place-items: center;
   border-radius: 50%;
-  color: #5749b8;
-  background: #eeebff;
+  color: #552d00;
+  background: #fff0d6;
   font-size: 14px;
   font-weight: 700;
 }

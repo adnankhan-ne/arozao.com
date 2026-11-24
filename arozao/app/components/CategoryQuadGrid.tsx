@@ -212,7 +212,7 @@ export function CategoryQuadGrid({ catalogProducts }: CategoryQuadGridProps) {
       <div className="section-header-row">
         <div>
           <span className="section-eyebrow">
-            <Sparkles size={13} className="inline-block mr-1 text-[#f1840e]" />
+            <Sparkles size={13} className="inline-block mr-1 text-[#552d00]" />
             Department Highlights · 12 Curated Boxes
           </span>
           <h2 className="section-main-title">Shop by Category</h2>

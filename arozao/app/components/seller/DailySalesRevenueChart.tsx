@@ -125,7 +125,7 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({
             Daily Revenue
           </div>
           <div
-            style={{ fontSize: "18px", fontWeight: "700", color: "#fb923c" }}
+            style={{ fontSize: "18px", fontWeight: "700", color: "#552D00" }}
           >
             ৳{data.revenue.toLocaleString()}
           </div>
@@ -412,8 +412,8 @@ export default function DailySalesRevenueChart({
                 type="button"
                 onClick={() => setTimeRange(range)}
                 style={{
-                  background: timeRange === range ? "#f97316" : "transparent",
-                  color: timeRange === range ? "#ffffff" : "#64748b",
+                  background: timeRange === range ? "#FF991C" : "transparent",
+                  color: timeRange === range ? "#1C1A2B" : "#64748b",
                   fontWeight: timeRange === range ? "600" : "500",
                   border: "none",
                   borderRadius: "6px",
@@ -569,8 +569,8 @@ export default function DailySalesRevenueChart({
                     x2="0"
                     y2="1"
                   >
-                    <stop offset="5%" stopColor="#f97316" stopOpacity={0.35} />
-                    <stop offset="95%" stopColor="#f97316" stopOpacity={0.0} />
+                    <stop offset="5%" stopColor="#FF991C" stopOpacity={0.35} />
+                    <stop offset="95%" stopColor="#FF991C" stopOpacity={0.0} />
                   </linearGradient>
                   <linearGradient
                     id="ordersGradient"
@@ -687,7 +687,7 @@ export default function DailySalesRevenueChart({
                   name={
                     metricType === "revenue" ? "Daily Revenue" : "Orders Count"
                   }
-                  fill={metricType === "revenue" ? "#f97316" : "#0284c7"}
+                  fill={metricType === "revenue" ? "#FF991C" : "#0284c7"}
                   radius={[4, 4, 0, 0]}
                   maxBarSize={32}
                 />

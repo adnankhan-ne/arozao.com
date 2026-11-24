@@ -231,7 +231,7 @@ export function OrderTrackingModal({ order, onClose }: OrderTrackingModalProps) 
                   {/* Gradient for route trail */}
                   <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="#10b981" />
-                    <stop offset="65%" stopColor="#f1840e" />
+                    <stop offset="65%" stopColor="#FF991C" />
                     <stop offset="100%" stopColor="#e2b878" />
                   </linearGradient>
 
@@ -293,15 +293,15 @@ export function OrderTrackingModal({ order, onClose }: OrderTrackingModalProps) 
 
                 {/* Waypoint 1: Sorting Facility */}
                 <g transform={`translate(${hubX}, ${hubY})`}>
-                  <circle r="10" fill="#f1840e" fillOpacity="0.2" />
-                  <circle r="5" fill="#f1840e" />
+                  <circle r="10" fill="#FF991C" fillOpacity="0.2" />
+                  <circle r="5" fill="#FF991C" />
                   <text y="-14" textAnchor="middle" fill="#cbd5e1" fontSize="9">Midway Dispatch</text>
                 </g>
 
                 {/* Waypoint 2: City Junction */}
                 <g transform={`translate(${transitX}, ${transitY})`}>
-                  <circle r="10" fill="#f1840e" fillOpacity="0.2" />
-                  <circle r="5" fill="#f1840e" />
+                  <circle r="10" fill="#FF991C" fillOpacity="0.2" />
+                  <circle r="5" fill="#FF991C" />
                   <text y="22" textAnchor="middle" fill="#cbd5e1" fontSize="9">Local Station</text>
                 </g>
 
@@ -318,13 +318,13 @@ export function OrderTrackingModal({ order, onClose }: OrderTrackingModalProps) 
                 {/* Animated Rider Vehicle Marker with Live Ping */}
                 <g transform={`translate(${riderX}, ${riderY})`}>
                   {/* Pulsing GPS Radar Ring */}
-                  <circle r="22" fill="#f1840e" fillOpacity="0.2" className="rider-radar-ring" />
-                  <circle r="14" fill="#f1840e" fillOpacity="0.4" />
+                  <circle r="22" fill="#FF991C" fillOpacity="0.2" className="rider-radar-ring" />
+                  <circle r="14" fill="#FF991C" fillOpacity="0.4" />
                   <circle r="8" fill="#fff" />
                   {/* Courier Van / Bike icon pin */}
                   <g transform="translate(-12, -26)">
-                    <rect width="24" height="18" rx="4" fill="#f1840e" />
-                    <polygon points="12,24 8,18 16,18" fill="#f1840e" />
+                    <rect width="24" height="18" rx="4" fill="#FF991C" />
+                    <polygon points="12,24 8,18 16,18" fill="#FF991C" />
                     <text x="12" y="13" textAnchor="middle" fontSize="11" fill="#fff">🛵</text>
                   </g>
                 </g>
@@ -376,7 +376,7 @@ export function OrderTrackingModal({ order, onClose }: OrderTrackingModalProps) 
             {/* Destination Info Box */}
             <div className="tracking-destination-card">
               <div className="dest-icon" aria-hidden="true">
-                <Home size={22} className="text-[#f1840e]" />
+                <Home size={22} className="text-[#552d00]" />
               </div>
               <div className="dest-details">
                 <strong>Delivery Destination:</strong>

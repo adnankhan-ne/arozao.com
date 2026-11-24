@@ -1,0 +1,3 @@
+<Files "jwt-secret.local">
+    Require all denied
+</Files>

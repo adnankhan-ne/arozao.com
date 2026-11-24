@@ -386,7 +386,7 @@ export default function SellOnArozaoPage() {
               <div className="sell-hero-float-card" aria-label="Demo Arozao Seller Dashboard">
                 <div className="float-card-header">
                   <span className="float-store-name">
-                    <i className="fa-solid fa-store" style={{ color: "#f1840e" }}></i>
+                    <i className="fa-solid fa-store" style={{ color: "#552D00" }}></i>
                     Dhaka Gadget Hub
                   </span>
                   <span className="float-badge">Verified Seller</span>
@@ -760,7 +760,7 @@ export default function SellOnArozaoPage() {
           <div className="fulfillment-options-grid">
             <div className="fulfillment-card">
               <h3>
-                <i className="fa-solid fa-person-walking-luggage" style={{ color: "#2E2A63" }}></i>
+                <i className="fa-solid fa-person-walking-luggage" style={{ color: "#552D00" }}></i>
                 Seller Fulfilled
               </h3>
               <p>
@@ -770,7 +770,7 @@ export default function SellOnArozaoPage() {
 
             <div className="fulfillment-card">
               <h3>
-                <i className="fa-solid fa-truck-ramp-box" style={{ color: "#f1840e" }}></i>
+                <i className="fa-solid fa-truck-ramp-box" style={{ color: "#552D00" }}></i>
                 Supported Fulfillment
               </h3>
               <p>
@@ -911,7 +911,7 @@ export default function SellOnArozaoPage() {
                 <span className="milestone-index">{j.num}</span>
                 <div className="milestone-body">
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                    <i className={`fa-solid ${j.icon}`} style={{ color: "#2E2A63", fontSize: "14px" }} aria-hidden="true"></i>
+                    <i className={`fa-solid ${j.icon}`} style={{ color: "#552D00", fontSize: "14px" }} aria-hidden="true"></i>
                     <h3>{j.title}</h3>
                   </div>
                   <p>{j.desc}</p>

@@ -631,8 +631,8 @@ export default function OrderFulfillmentTimeWidget({
                   type="button"
                   onClick={() => setTimeRange(range)}
                   style={{
-                    background: timeRange === range ? "#f1840e" : "transparent",
-                    color: timeRange === range ? "#ffffff" : "#64748b",
+                    background: timeRange === range ? "#FF991C" : "transparent",
+                    color: timeRange === range ? "#1C1A2B" : "#64748b",
                     fontWeight: timeRange === range ? "700" : "500",
                     border: "none",
                     borderRadius: "6px",
@@ -900,8 +900,8 @@ export default function OrderFulfillmentTimeWidget({
                       <stop offset="95%" stopColor="#3b82f6" stopOpacity={0.0} />
                     </linearGradient>
                     <linearGradient id="dispatchGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#f1840e" stopOpacity={0.35} />
-                      <stop offset="95%" stopColor="#f1840e" stopOpacity={0.0} />
+                      <stop offset="5%" stopColor="#FF991C" stopOpacity={0.35} />
+                      <stop offset="95%" stopColor="#FF991C" stopOpacity={0.0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />

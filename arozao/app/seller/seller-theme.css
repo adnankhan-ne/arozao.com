@@ -1,27 +1,30 @@
 .seller-theme {
-  --bs-primary: #2e2a63;
-  --bs-primary-rgb: 46, 42, 99;
-  --bs-link-color: #2e2a63;
-  --bs-link-hover-color: #242052;
+  --bs-primary: #FF991C;
+  --bs-primary-rgb: 255, 153, 28;
+  --bs-link-color: #552D00;
+  --bs-link-hover-color: #3F2200;
   --bs-body-font-family: "Nunito", "Segoe UI", sans-serif;
   color: var(--bs-body-color);
   font-family: var(--bs-body-font-family);
 }
 
 .seller-theme .btn-primary {
-  --bs-btn-bg: #2e2a63;
-  --bs-btn-border-color: #2e2a63;
-  --bs-btn-hover-bg: #242052;
-  --bs-btn-hover-border-color: #242052;
-  --bs-btn-active-bg: #1b1840;
-  --bs-btn-active-border-color: #1b1840;
+  --bs-btn-color: #1C1A2B;
+  --bs-btn-bg: #FF991C;
+  --bs-btn-border-color: #FF991C;
+  --bs-btn-hover-bg: #E8870B;
+  --bs-btn-hover-border-color: #E8870B;
+  --bs-btn-active-bg: #C96B00;
+  --bs-btn-active-border-color: #C96B00;
 }
 
 .seller-theme .btn-outline-primary {
-  --bs-btn-color: #2e2a63;
-  --bs-btn-border-color: #2e2a63;
-  --bs-btn-hover-bg: #2e2a63;
-  --bs-btn-hover-border-color: #2e2a63;
-  --bs-btn-active-bg: #1b1840;
-  --bs-btn-active-border-color: #1b1840;
+  --bs-btn-color: #552D00;
+  --bs-btn-border-color: #FF991C;
+  --bs-btn-hover-color: #1C1A2B;
+  --bs-btn-hover-bg: #FF991C;
+  --bs-btn-hover-border-color: #FF991C;
+  --bs-btn-active-color: #1C1A2B;
+  --bs-btn-active-bg: #C96B00;
+  --bs-btn-active-border-color: #C96B00;
 }

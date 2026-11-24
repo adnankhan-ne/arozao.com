@@ -169,15 +169,15 @@ export default async function ProductDetail({
             {/* Quick Guarantees beneath image */}
             <div className="pdp-gallery-trust-badges">
               <div className="gallery-trust-item">
-                <Truck size={17} className="text-[#2e2a63]" />
+                <Truck size={17} className="text-[#552d00]" />
                 <span>Express 24-48h Delivery</span>
               </div>
               <div className="gallery-trust-item">
-                <Banknote size={17} className="text-[#2e2a63]" />
+                <Banknote size={17} className="text-[#552d00]" />
                 <span>Cash on Delivery</span>
               </div>
               <div className="gallery-trust-item">
-                <RotateCcw size={17} className="text-[#2e2a63]" />
+                <RotateCcw size={17} className="text-[#552d00]" />
                 <span>7-Day Return Service</span>
               </div>
             </div>
@@ -208,8 +208,8 @@ export default async function ProductDetail({
                   <Star
                     key={s}
                     size={14}
-                    fill={s <= Math.round(product.rating || 4.7) ? "#f1840e" : "none"}
-                    className={s <= Math.round(product.rating || 4.7) ? "text-[#f1840e]" : "text-gray-300"}
+                    fill={s <= Math.round(product.rating || 4.7) ? "#FF991C" : "none"}
+                    className={s <= Math.round(product.rating || 4.7) ? "text-[#552d00]" : "text-gray-300"}
                   />
                 ))}
                 <span className="rating-score-num">{product.rating || 4.7}</span>

@@ -80,8 +80,8 @@ export function ProductReviewsSection({ product }: ProductReviewsSectionProps) {
                 <Star
                   key={s}
                   size={18}
-                  fill={s <= Math.round(ratingScore) ? "#f1840e" : "none"}
-                  className={s <= Math.round(ratingScore) ? "text-[#f1840e]" : "text-gray-300"}
+                  fill={s <= Math.round(ratingScore) ? "#FF991C" : "none"}
+                  className={s <= Math.round(ratingScore) ? "text-[#552d00]" : "text-gray-300"}
                 />
               ))}
             </div>
@@ -155,8 +155,8 @@ export function ProductReviewsSection({ product }: ProductReviewsSectionProps) {
                     <Star
                       key={s}
                       size={14}
-                      fill={s <= rev.rating ? "#f1840e" : "none"}
-                      className={s <= rev.rating ? "text-[#f1840e]" : "text-gray-300"}
+                      fill={s <= rev.rating ? "#FF991C" : "none"}
+                      className={s <= rev.rating ? "text-[#552d00]" : "text-gray-300"}
                     />
                   ))}
                   <strong className="review-title">{rev.title}</strong>

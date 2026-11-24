@@ -185,8 +185,8 @@ export default function AdminOverview({
                   >
                     <defs>
                       <linearGradient id="adminGmvFill" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#7158e2" stopOpacity={0.2} />
-                        <stop offset="100%" stopColor="#7158e2" stopOpacity={0.01} />
+                        <stop offset="0%" stopColor="#FF991C" stopOpacity={0.2} />
+                        <stop offset="100%" stopColor="#FF991C" stopOpacity={0.01} />
                       </linearGradient>
                     </defs>
                     <CartesianGrid
@@ -223,7 +223,7 @@ export default function AdminOverview({
                     <Area
                       type="monotone"
                       dataKey="gmv"
-                      stroke="#7158e2"
+                      stroke="#FF991C"
                       strokeWidth={2.5}
                       fill="url(#adminGmvFill)"
                       activeDot={{ r: 5, strokeWidth: 0 }}
