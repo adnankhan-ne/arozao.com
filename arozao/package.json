@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.1.0",
     "lucide-react": "^1.61.0",
     "motion": "^14.6.0",
     "next": "14.2.25",

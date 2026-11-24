@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import type { Viewport } from "next";
 import { Inter, Sora, Hind_Siliguri } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora", display: "swap" });
@@ -119,6 +120,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </ToastProvider>
           </WishlistProvider>
         </CartProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
